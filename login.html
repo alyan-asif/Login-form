@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATED LOGIN FORM</title>
+</head>
+
+<body>
+    <div class="para">
+        <h1>ANIMATED LOGIN FORM</h1>
+    </div>
+    <div class="box">
+        <h1 style="padding-top: 50px;text-shadow: 5px 9px 3px #169099;color: #45f3ff; font-weight: 500; text-align: center; letter-spacing: 0.1em;">Login</h1>
+        <form name="myform">
+            <label for="name">User Name</label>
+            <input type="email" id="name" name="email" value="" required placeholder="User Name">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="output" value="" required placeholder="Password">
+            <input class="remember" type="checkbox" id="remember" name="remember" value="">
+            <label class="label" for="remember"> Remember Me</label>
+            <button class="submit" onclick="return Login()">Login</button>
+            <button class="cancel" onclick="cancel()">Cancel</button>
+
+        </form>
+    </div>
+    <div class="container">
+        <input class="array" type="button" id="button1" value="Add" onclick="return find_inputs();"></input>
+        <input class="array" type="button" id="button2" value="Display" onclick="return display_array();"></input>
+        <div id="Result"></div>
+    </div>
+    <script>
+
+        let a = 0;
+        const array = Array();
+
+        function find_inputs() {
+            var x = document.forms["myform"]["email", "password"].value;
+            if (x == "") {
+                alert("Invalid Credentials, Please Fill out both Fields")
+            }
+            else {
+                array[a] = document.getElementById("name", "psw").value;
+                alert(`Element: ${array[a]} Added at index ${a}`);
+                a++;
+                document.getElementById("name", "psw").value = "";
+            }
+        }
+
+        function display_array() {
+            let e = "<hr/>";
+
+            for (let y = 0; y < array.length; y++) {
+                e += `Element ${y} = ${array[y]}<br/>`;
+            }
+            document.getElementById("Result").innerHTML = e;
+        }
+
+        function Login() {
+            var x = document.forms["myform"]["email", "password"].value;
+            var checkbox = document.getElementById("remember");
+            if (x == "") {
+                alert("Invalid Credentials, Please Fill out both Fields")
+                return false;
+            }
+            if(checkbox.checked == true){
+                alert("Logged in successfully with Remember Me marked as set")
+            }
+            else {
+                alert("Successfully Logged inn..")
+            }
+        }
+
+        function cancel() {
+            document.getElementById("output").value='';
+            document.getElementById("name").value='';
+            alert("Text Cleared")            
+        }
+
+    </script>
+</body>
+
+</html>
+<!-- // var abc = document.forms["myform"]["email", "password"].value;
+            // let text = "";
+            // if (abc == text) {
+            //     alert("Text Already Cleared")
+            // }
+            // else {
+            //     alert("Text Cleared")
+            // } -->

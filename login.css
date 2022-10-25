@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+.para{
+    display: inline-block;
+    position: absolute;
+    right: 70%;
+    top: 40%;
+    background: #1c1c1c;
+    color: #45fff6;
+    width: 350px;
+    font-size: 26px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: #ffd891 solid underline;
+}
+.container{
+    display: inline-block;
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    color: #ffd891;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: cursive;    
+}
+.array{
+    width: 100px;
+    border-radius: 50px;
+    border-bottom: 3px solid burlywood;
+    color: #ffd891;
+    cursor: pointer;
+    font-style: italic;
+    background-color: #249595;
+    font-size: 18px;
+}
+body{
+    text-align: center;
+    background-color: #1c1c1c;
+    background-image: url("back.jpg");
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+label{
+    padding: 20px;
+    font-size: 18px;
+    opacity: 0.6;
+}
+input{
+    height: 40px;
+    width: 300px;
+    border-radius: 8px;
+    border-color: #27959d;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 3px solid burlywood;
+    color: #ffd891;
+}
+.submit{
+    padding: 15px;
+    margin: 20px;
+    width: 100px;
+    position: relative;
+    bottom: 30px;
+    background: #27959d;
+    margin-right: 150px;
+    color: #1c1c1c;
+    font-family: cursive;
+    font-size: 16px;
+    font-weight: bold;
+    border-color: #169099;
+}
+.cancel{
+    padding: 15px;
+    width: 100px;
+    margin-left: 150px;
+    position: relative;
+    bottom: 106px;
+    background: #27959d;
+    color: #1c1c1c;
+    font-family: cursive;
+    font-size: 16px;
+    font-weight: bold;
+    border-color: #169099;
+}
+.box{
+    border: 3px solid;
+    box-shadow: 5px 10px 15px 10px #054f5a;
+    width: 450px;
+    margin: auto;
+    margin-top: 150px;
+    height: 500px;
+    color:#45f3ff;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.remember{
+    height: 15px;
+    position: relative;
+    top: 10px;
+    right: 120px;
+}
+.label{
+    margin: auto;
+    position: relative;
+    bottom: 30px;
+    right: 45px;
+}
+input[placeholder="User Name"]{
+    font-size: 18px;
+    font-family: cursive;
+}
+input[placeholder="Password"]{
+    font-size: 18px;
+    font-family: cursive;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
